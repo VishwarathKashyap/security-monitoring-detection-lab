@@ -236,4 +236,4 @@ Incident Documentation
 
 ## Dashboard Evidence
 
-![Wazuh SSH Brute Force Detection](screenshots/ssh-bruteforce-rule-5712.png)
+![Wazuh SSH Brute Force Detection](screenshots/ssh-bruteforce-rule.png)
