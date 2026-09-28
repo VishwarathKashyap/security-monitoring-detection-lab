@@ -281,6 +281,18 @@ pam_unix(sshd:auth): authentication failure
 Failed password for invalid user nonexistentuser
 Connection closed by invalid user
 ```
+### Scenario 02 — Sudo Privilege Escalation
+
+A controlled `sudo` execution was performed on the `familyserver-linux`
+endpoint. Wazuh detected the successful transition from user `vishwa` to
+`root` through Rule 5402 with Level 3 severity.
+
+The event contained the executed command `/usr/bin/id` and was classified
+as authorized administrative activity with no evidence of compromise.
+
+**MITRE ATT&CK:** Sudo and Sudo Caching  
+**Wazuh Rule:** 5402  
+**Status:** ✅ Completed
 
 ### Wazuh Detection
 
